@@ -3,7 +3,37 @@ nav#sl-sitenav
      display: flex
      flex-direction: column
      background: #ffffff
-
+     .nav-bar__sale
+          height: 50px
+          border-bottom: 1px solid $sl-border
+          img
+               display: block
+               margin: 0
+               height: 100%
+               background: #282336
+          a.overlay
+               position: absolute
+               top: 0
+               left: 0
+               width: 100%
+               height: 50px
+               display: block
+               +tran
+               &:hover
+                    text-decoration: none
+               .sl-container
+                    display: flex
+                    height: 100%
+                    align-items: center
+                    justify-content: center
+                    h1
+                         margin: 0
+                         font-size: 15px
+                         color: $sl-light
+                         @media screen and (max-width: 490px)
+                              font-size: 14px
+                         @media screen and (max-width: 450px)
+                              font-size: 3.5vw
      .nav-bar__shadow
           border-bottom: 2px solid $sl-light
           .sl-container
@@ -97,7 +127,6 @@ nav#sl-sitenav
 
                a.nav-bar__logo
                     position: absolute
-                    top: 52px
                     left: 50%
                     transform: translateX(-50%)
                     display: block
