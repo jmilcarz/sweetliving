@@ -36,5 +36,10 @@ $(document).ready(function() {
 
      $("#closeMenu").click(function() {
           $(".nav-search-box").slideUp(300);
-     })
+     });
+
+});
+
+$(window).ready(function() {
+    $("#brandslider").endlessScroll({ width: '100%', height: '100px', steps: -1, speed: 75, mousestop: false });
 });

@@ -1,0 +1,24 @@
+.sl-container#main-container
+     background: #fff
+     .content-box
+          padding: 20px 0px
+          p.sl-blockqoute
+               font-size: 17px
+               font-weight: 300
+               position: relative
+               z-index: 1
+               display: block
+               max-width: 700px
+               margin: 0 auto
+               text-align: justify
+               &::before
+                    content: '"'
+                    position: absolute
+                    z-index: -1
+                    font-size: 330px
+                    transform: translate(-37px, -125px)
+                    color: $sl-blue
+                    font-family: 'PT Sans', sans-serif
+
+               b
+                    font-weight: 500

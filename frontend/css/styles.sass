@@ -1,5 +1,6 @@
 @import "modules/vars.sass"
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+@import "https://fonts.googleapis.com/css?family=PT+Sans"
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext"
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 
@@ -17,15 +18,26 @@ body
 
 .sl-btn
      padding: 5px
-     border: 1px solid $sl-light
+     border: 1px solid $sl-dark
+     text-align: center
+     color: $sl-dark
      +tran
      &:hover
+          color: darken($sl-blue, 15%)
+          border-color: darken($sl-blue, 15%)
           cursor: pointer
-          background: $sl-light
           text-decoration: none
+
+.sl-btn.sl-btn-filled
+     background: $sl-blue
+     color: $sl-light
+     &:hover
+          background: darken($sl-blue, 15%)
 
 .sl-container#main-container
      margin-top: 15px
+     margin-bottom: 15px
 
 @import "modules/nav"
-@import "modules/carousel"
+@import "modules/carousel.sass"
+@import "modules/index"
