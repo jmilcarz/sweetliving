@@ -1,0 +1,105 @@
+header.sl-section-header
+     padding: 25px 0
+     .sl-section-title
+          margin: 0
+          text-transform: uppercase
+          text-align: center
+          font-weight: 800
+          font-size: 29px
+          color: $sl-dark
+          &::after
+               display: block
+               margin: 3px auto 0 auto
+               box-sizing: border-box
+               content: 'sl'
+               font-size: 1px
+               max-width: 90px
+               height: 6px
+               color: $sl-pink
+               background: $sl-pink
+
+// main.sl-section-content
+
+.sl-grid-row
+     display: grid
+     grid-gap: 25px
+
+.sl-card
+     @media screen and (max-width: 1020px)
+          display: flex
+     @media screen and (max-width: 515px)
+          display: block
+          margin: 0 auto
+          max-width: 320px
+
+     .sl-card-img
+          width: 100%
+          object-fit: cover
+          @media screen and (max-width: 1020px)
+               width: 160px
+               height: 160px
+          @media screen and (max-width: 630px)
+               height: 120px
+               width: 120px
+          @media screen and (max-width: 515px)
+               max-height: 320px
+               max-width: 320px
+               height: 100%
+               width: 100%
+
+
+     .sl-card-body
+          box-sizing: border-box
+          padding: 15px 10px
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          height: 320px
+          @media screen and (max-width: 1020px)
+               height: 160px
+               justify-content: space-between
+          @media screen and (max-width: 630px)
+               height: 180px
+               justify-content: flex-start
+               padding: 0 10px
+          @media screen and (max-width: 515px)
+               height: auto
+
+          .sl-card-title
+               height: 60px
+               margin: 0
+               font-size: 21px
+               text-align: center
+               text-transform: uppercase
+               font-weight: 500
+               @media screen and (max-width: 1020px)
+                    text-align: left
+               @media screen and (max-width: 880px)
+                    height: auto
+               @media screen and (max-width: 630px)
+                    margin-bottom: 10px
+               @media screen and (max-width: 515px)
+                    margin-top: 10px
+                    text-align: center
+
+          .sl-card-paragraph
+               margin: 0
+               font-size: 16px
+               height: 140px
+               @media screen and (max-width: 515px)
+                    text-align: center
+
+
+          .sl-card-btn
+               @media screen and (max-width: 1020px)
+                    align-self: flex-start
+                    width: 120px
+               @media screen and (max-width: 650px)
+                    font-size: 14px
+                    width: 100px
+               @media screen and (max-width: 630px)
+                    margin-top: 15px
+
+               @media screen and (max-width: 515px)
+                    display: block
+                    width: 100%

@@ -1,7 +1,7 @@
 @import "modules/vars.sass"
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 @import "https://fonts.googleapis.com/css?family=PT+Sans"
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext"
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext"
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 
 .sl-container
@@ -29,15 +29,22 @@ body
           text-decoration: none
 
 .sl-btn.sl-btn-filled
+     border: none
+     padding: 5px 15px
      background: $sl-blue
      color: $sl-light
      &:hover
           background: darken($sl-blue, 15%)
 
+.sl-btn-upper
+     font-weight: 700
+     text-transform: uppercase
+
 .sl-container#main-container
      margin-top: 15px
      margin-bottom: 15px
 
+@import "modules/sweetliving"
 @import "modules/nav"
 @import "modules/carousel.sass"
 @import "modules/index"

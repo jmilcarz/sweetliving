@@ -46,36 +46,31 @@ body
      
           .content-box
                p.sl-blockqoute <b>Sweet Living Home Inspirations</b> to wyjątkowe miejsce, które powstało z pasji oraz <b>zamiłowania</b> do piękna i estetyki. Naszą misją jest <b>aranżacja</b> przytulnych wnętrz urządzonych ze smakiem, w których gości zarówno <b>elegancja</b> i <b>nietuzinkowość</b> jak i <b>domowa atmosfera</b>. Tworzymy projekty wnętrz w stylu <b>Hampton</b>, <b>New England</b> oraz <b>glamour</b>, które stanowią uosobienie <b>luksusu</b>, a każdy detal nabiera unikalnego charakteru. Zapraszamy do naszego <b>showroomu w Warszawskim Wilanowie</b>, gdzie na miejscu można zapoznać się z bogatą ekspozycją artykułów dekoracyjnych. Oferowane w Sweet Living marki to: <b>Riviera Maison</b>, <b>Eichholtz</b>, <b>Bloomingville</b>, <b>MTI Furninova</b>, <b>Lene Bjerre</b>, <b>Thibaut</b>, <b>Ralph Lauren</b> oraz <b>Hilding</b>.
-               
-               #brandslider
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-                    a(href="" target="_blank")
-                         img(src="img/logo.png")
-               
-               //- div(id="brand-slideshow")
-               //-     div#brand-slideshow-1
-               //- 
+               .news
+                    header.sl-section-header
+                         h1.sl-section-title Aktualności
+                    main.sl-section-content
+                         .sl-grid-row
+                              .sl-card
+                                   img(src="https://sweetliving.pl/image/cache/catalog/SLBOZENARODZENIE/katalog-500x500.JPG").sl-card-img
+                                   .sl-card-body
+                                        h2.sl-card-title Katalog świąteczny Sweet Living
+                                        p.sl-card-paragraph Zapraszamy do obejrzenia katalogu z propozycją świątecznych aranżacji, produktów dekoracyjnych i autorskich bombek SL Collection. Sprawdź nasze propozycje i zainspiruj się!
+                                        a(href="").sl-btn.sl-btn-filled.sl-btn-upper.sl-card-btn Więcej
+                              .sl-card
+                                   img(src="https://sweetliving.pl/image/cache/catalog/BLOG/szafki_nocne_sl_collection/insta%20DSC_1974-500x500.jpg").sl-card-img
+                                   .sl-card-body
+                                        h2.sl-card-title Szafki nocne SL Collection
+                                        p.sl-card-paragraph Zobaczcie koniecznie nowy wpis na blogu, w którym prezentujemy autorską linię szafek nocnych SL Collection. Nie zabraknie też inspiracji jak aranżować szafki i stoliki nocne.
+                                        a(href="").sl-btn.sl-btn-filled.sl-btn-upper.sl-card-btn Więcej
+                              .sl-card
+                                   img(src="https://sweetliving.pl/image/cache/catalog/AAAANEWSY/PODUSZKA_DEKORACYJNA_LETITSNOW-500x500.jpg").sl-card-img
+                                   .sl-card-body
+                                        h2.sl-card-title Świąteczne poduszki SL Collection
+                                        p.sl-card-paragraph W Sweet Living znajdziesz limitowaną edycję pięknych, welurowych, miłych w dotyku, haftowanych poduszek, w kolorze czerwonym. Zapraszamy do showroomu i do działu poduszki w sklepie internetowym.
+                                        a(href="").sl-btn.sl-btn-filled.sl-btn-upper.sl-card-btn Więcej
+                         
+               include modules/brandslider.jade
      include modules/footer.jade     
                     
      script(src="https://code.jquery.com/jquery-3.2.1.min.js")

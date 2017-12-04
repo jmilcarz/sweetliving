@@ -1,6 +1,6 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=PT+Sans";
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext";
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css";
 .sl-container {
   max-width: 1250px;
@@ -30,14 +30,157 @@ body {
     text-decoration: none; }
 
 .sl-btn.sl-btn-filled {
+  border: none;
+  padding: 5px 15px;
   background: #93c5e7;
   color: #f5f5f5; }
   .sl-btn.sl-btn-filled:hover {
     background: #54a3d9; }
 
+.sl-btn-upper {
+  font-weight: 700;
+  text-transform: uppercase; }
+
 .sl-container#main-container {
   margin-top: 15px;
   margin-bottom: 15px; }
+
+header.sl-section-header {
+  padding: 25px 0; }
+  header.sl-section-header .sl-section-title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    font-size: 29px;
+    color: #292929; }
+    header.sl-section-header .sl-section-title::after {
+      display: block;
+      margin: 3px auto 0 auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      content: 'sl';
+      font-size: 1px;
+      max-width: 90px;
+      height: 6px;
+      color: #e74ed8;
+      background: #e74ed8; }
+
+.sl-grid-row {
+  display: grid;
+  grid-gap: 25px; }
+
+@media screen and (max-width: 1020px) {
+  .sl-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media screen and (max-width: 515px) {
+  .sl-card {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px; } }
+
+.sl-card .sl-card-img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+  @media screen and (max-width: 1020px) {
+    .sl-card .sl-card-img {
+      width: 160px;
+      height: 160px; } }
+  @media screen and (max-width: 630px) {
+    .sl-card .sl-card-img {
+      height: 120px;
+      width: 120px; } }
+  @media screen and (max-width: 515px) {
+    .sl-card .sl-card-img {
+      max-height: 320px;
+      max-width: 320px;
+      height: 100%;
+      width: 100%; } }
+
+.sl-card .sl-card-body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 320px; }
+  @media screen and (max-width: 1020px) {
+    .sl-card .sl-card-body {
+      height: 160px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  @media screen and (max-width: 630px) {
+    .sl-card .sl-card-body {
+      height: 180px;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      padding: 0 10px; } }
+  @media screen and (max-width: 515px) {
+    .sl-card .sl-card-body {
+      height: auto; } }
+  .sl-card .sl-card-body .sl-card-title {
+    height: 60px;
+    margin: 0;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500; }
+    @media screen and (max-width: 1020px) {
+      .sl-card .sl-card-body .sl-card-title {
+        text-align: left; } }
+    @media screen and (max-width: 880px) {
+      .sl-card .sl-card-body .sl-card-title {
+        height: auto; } }
+    @media screen and (max-width: 630px) {
+      .sl-card .sl-card-body .sl-card-title {
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 515px) {
+      .sl-card .sl-card-body .sl-card-title {
+        margin-top: 10px;
+        text-align: center; } }
+  .sl-card .sl-card-body .sl-card-paragraph {
+    margin: 0;
+    font-size: 16px;
+    height: 140px; }
+    @media screen and (max-width: 515px) {
+      .sl-card .sl-card-body .sl-card-paragraph {
+        text-align: center; } }
+  @media screen and (max-width: 1020px) {
+    .sl-card .sl-card-body .sl-card-btn {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      width: 120px; } }
+  @media screen and (max-width: 650px) {
+    .sl-card .sl-card-body .sl-card-btn {
+      font-size: 14px;
+      width: 100px; } }
+  @media screen and (max-width: 630px) {
+    .sl-card .sl-card-body .sl-card-btn {
+      margin-top: 15px; } }
+  @media screen and (max-width: 515px) {
+    .sl-card .sl-card-body .sl-card-btn {
+      display: block;
+      width: 100%; } }
 
 nav#sl-sitenav {
   -webkit-box-shadow: 0px 4px 6px #f5f5f5;
@@ -644,18 +787,23 @@ footer#sl-sitefooter {
   -ms-flex-align: center;
   align-items: center;
   margin: 25px 0 15px 0; }
+  #brandslider img {
+    height: 60px; }
 
 .sl-container#main-container {
   background: #fff; }
   .sl-container#main-container .content-box {
-    padding: 20px 0px; }
+    padding: 20px 15px; }
+    @media screen and (max-width: 775px) {
+      .sl-container#main-container .content-box {
+        padding: 20px 0px; } }
     .sl-container#main-container .content-box p.sl-blockqoute {
       font-size: 17px;
       font-weight: 300;
       position: relative;
       z-index: 1;
       display: block;
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
       text-align: justify; }
       .sl-container#main-container .content-box p.sl-blockqoute::before {
@@ -670,3 +818,18 @@ footer#sl-sitefooter {
         font-family: 'PT Sans', sans-serif; }
       .sl-container#main-container .content-box p.sl-blockqoute b {
         font-weight: 500; }
+
+.news {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .news .sl-grid-row {
+    grid-template-columns: repeat(3, 1fr); }
+    @media screen and (max-width: 1020px) {
+      .news .sl-grid-row {
+        grid-template-columns: 1fr; } }
+    @media screen and (max-width: 1020px) {
+      .news .sl-grid-row .sl-card-paragraph {
+        font-size: 15px; } }
+    @media screen and (max-width: 630px) {
+      .news .sl-grid-row .sl-card-paragraph {
+        height: auto; } }
