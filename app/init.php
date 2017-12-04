@@ -1,14 +1,4 @@
 <?php
-
-// system
-class app {
-     $system_name = "sweetliving";
-     $systen_lang = "pl";
-     // $system_Mail_email = "phpstarter@phpstarter.example";
-     // $system_Mail_password = "phpstarter";
-     // $system_Mail_sentFrom = "phpstarter";
-}
-
 // require classes (don't change this)
 function __autoload($class_name) {
      require_once './app/classes/' . $class_name . '.php';

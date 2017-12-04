@@ -1,0 +1,35 @@
+
+/* equal card height */
+.product-slider {
+     max-width: 1100px;
+     margin: 0 auto;
+}
+.product-slider .row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.product-slider .row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.product-slider .carousel-inner>.row-equal.active,
+.product-slider .carousel-inner>.row-equal.next,
+.product-slider .carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.product-slider .carousel-inner>.row-equal.active.left,
+.product-slider .carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.product-slider .card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}

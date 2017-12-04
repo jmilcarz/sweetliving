@@ -37,7 +37,8 @@ $(document).ready(function() {
      $("#closeMenu").click(function() {
           $(".nav-search-box").slideUp(300);
      });
-
+     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+    $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
 });
 
 $(window).ready(function() {
